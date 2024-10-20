@@ -1,0 +1,35 @@
+@import url(https://fonts.googleapis.com/css?family=VT323);
+
+body {
+  background-color: #181A1B;
+  
+}
+.hello {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.youre-cool {
+  width: 17ch;
+  animation: typing 10s steps(17), blink .2s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: VT323;
+  color: #e9f0f5;
+  font-size: 1.4em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}

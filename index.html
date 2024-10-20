@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> 18 </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="hello">
+    <div class="youre-cool">
+      Good Night❤️🤗
+    </div>
+</div>
+<!-- partial -->
+<audio id="background-music" src="1.mp3" autoplay loop>
+  Your browser does not support the audio element.
+  </audio>
+  
+  <script>
+  window.addEventListener('load', function () {
+    var audio = document.getElementById('background-music');
+    
+    // Attempt to autoplay (some browsers may prevent this)
+    audio.play().catch(function (error) {
+      console.log('Autoplay blocked. Error:', error);
+  
+      // Optionally, prompt the user to start the audio manually
+      document.body.addEventListener('click', function() {
+        audio.play();
+      }, { once: true });
+    });
+  });
+  </script>
+</body>
+</html>
